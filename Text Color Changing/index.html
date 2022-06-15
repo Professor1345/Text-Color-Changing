@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text color changing</title>
+    <style>
+        .content-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        p{
+           color: white; 
+           font-size: 80px;
+           font-weight: bold;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           text-align: center;
+        }
+        span{
+            
+            animation: color 7s linear infinite;
+        }
+        @keyframes color {
+            0% {
+                color:royalblue;
+            }
+            25% {
+                color: red;
+            }
+            50% {
+                color:green;
+            }
+            75% {
+                color:purple;
+            }
+            100%{
+                color: yellow;
+            }
+            
+        }
+        @media only screen and (max-width: 600px) {
+            p{
+           font-size: 30px;
+        }
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 992px) {
+            p{
+           font-size: 60px;
+        }   
+        }
+    </style>
+</head>
+<body style="background-color: black; overflow: hidden;">
+    <div class="content-container">
+        
+       <p> We are Pan African <span>Product</span> Builders. </p>
+    </div>
+</body>
+</html>
